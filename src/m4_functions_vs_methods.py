@@ -127,6 +127,15 @@ def draw_many_squares(my_turtle, number_of_squares, size, twist):
 ###############################################################################
 
 def try_methods():
+    window = rg.TurtleWindow
+    brown_turtle = rg.SimpleTurtle('turtle')
+    brown_turtle.pen = rg.Pen('brown', 5)
+    brown_turtle.forward(150)
+    brown_turtle.left(90)
+    brown_turtle.forward(50)
+    brown_turtle.backward(100)
+
+    window.close_on_mouse_click
     """
     Constructs a SimpleTurtle and sets its   pen   to a new rg.Pen
     that is 'brown' with thickness 5.
@@ -137,13 +146,17 @@ def try_methods():
       -- backward  100 units
     """
     ###########################################################################
-    # TODO: 3. Implement and test this function, per its doc-string above.
+    # DONE: 3. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     ###########################################################################
 
 
 def try_functions():
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
+    jump_and_move_turtle(200,100,300,30)
+    jump_and_move_turtle(100,200,0,0)
+    jump_and_move_turtle(-50,50,100,100)
+
     """
     Causes several SimpleTurtles to do the following:
      -- One jumps to (200, 100), then moves (while drawing) to (300, 30)
@@ -151,7 +164,7 @@ def try_functions():
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
     ###########################################################################
-    # TODO: 4. Implement and test this function, per its doc-string above.
+    # DONE: 4. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #    NOTE: This function requires
@@ -200,3 +213,5 @@ def try_methods_and_functions():
 # -----------------------------------------------------------------------------
 
 main()
+try_methods()
+try_functions()
