@@ -176,6 +176,31 @@ def try_functions():
 
 def try_methods_and_functions():
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
+    window = rg.TurtleWindow
+    blue_turtle = rg.SimpleTurtle('turtle')
+    blue_turtle.pen = rg.Pen('blue', 5)
+    blue_turtle.backward(150)
+    blue_turtle.speed = 1
+    for _ in range(2):
+        blue_turtle.draw_square(100)
+        blue_turtle.left(30)
+    blue_turtle.speed = 5
+    blue_turtle.pen = rg.Pen('red', 5)
+    for _ in range(10):
+        blue_turtle.draw_square(50)
+        blue_turtle.left(15)
+    blue_turtle.speed = 100
+    blue_turtle.pen = rg.Pen('red', 35)
+    for _ in range(8):
+        blue_turtle.draw_square(300)
+        blue_turtle.left(60)
+    blue_turtle.pen = rg.Pen('black', 3)
+    blue_turtle.backward(200)
+    blue_turtle.draw_circle(blue_turtle,30)
+    blue_turtle.draw_sqaure(blue_turtle, 50)
+
+
+
     """
     Constructs a SimpleTurtle and sets its   pen  to a new rg.Pen
     that is 'blue' with thickness 5.
